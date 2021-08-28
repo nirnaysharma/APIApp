@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "XAso06Te1hYwjLG9X+T6jYtixtwumBI9S2Ys+xc2GRqmau+VyCn1G7F4Q5Hn0n4prOar1TUeJuZDWOY2G+Jjsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nirnay.sharma\\source\\repos\\ApiApp.API\\ApiApp.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+    "C:\\Users\\nirnay.sharma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

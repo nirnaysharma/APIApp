@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h3>Testing API</h3>
+</div>
+
+<div class="row">
+    <div class="col-9">
+        <div style="width:60%; margin:0 auto;padding:20px;">
+            <div class="row">
+                <div class="col-md-6" style="padding:10px">
+                    Input multiple integers seperated by commas and click 'Submit'.
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <textarea id="txtMultipleNumber" name="txtMultipleNumber" placeholder="Enter comma seperated number(s)" rows="4" cols="30" onkeypress="CheckNumeric(event);"></textarea>
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <button id="submitMultipleNumbers" type="submit" disabled="disabled">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="padding:10px">
+                    Input an integer and click 'Submit'.
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <input  id="txtSingleNumber" name="txtSingleNumber" width="500" placeholder="Enter 1 number" onKeyUp="$(this).val($(this).val().replace(/[^\d]/ig, ''))" />
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <button id="submitSingleNumber" type="submit" disabled="disabled">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding:10px">
+                    Result:
+                    <label id="lblResults"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="width:60%; margin:0 auto;padding:20px;">
+            <div class="row">
+                <div class="col-md-6" style="padding:10px">
+                    The same thing can be accomplished using a single textbox as shown below:
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="padding:10px">
+                    Input single integer or multiple integers seperated by commas and click 'Submit'.
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <textarea id="txtSingleMultipleNumber" name="txtSingleMultipleNumber" placeholder="Enter single number or comma seperated number(s)" rows="4" cols="30" onkeypress="CheckNumeric(event);"></textarea>
+                </div>
+                <div class="col-md-6" style="padding:10px">
+                    <button id="submitSingleMultipleNumbers" type="submit" disabled="disabled">Submit</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" style="padding:10px">
+                    Result:
+                    <label id="lblCombinedResults"></label>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+@section scripts{
+
+}
