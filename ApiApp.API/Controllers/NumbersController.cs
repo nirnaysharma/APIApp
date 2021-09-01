@@ -27,11 +27,17 @@ namespace ApiApp.API.Controllers
         {
             if (!string.IsNullOrEmpty(numbers))
             {
-                List<int> numbersList = numbers.Split(',').Select(int.Parse).ToList();
-                int sum = numbersList.Sum(x => Convert.ToInt32(x));
-                bool isPrime = chkIfPrime(sum);
-                string jsonObj = JsonConvert.SerializeObject(new Result { Sum = sum, IsPrime = isPrime });
-                return jsonObj;
+                int testVar;  // Ignored, just required for TryParse()
+                bool isListOfInts = numbers.Split(',').All(s => int.TryParse(s, out testVar));
+                if (isListOfInts)
+                {
+                    List<int> numbersList = numbers.Split(',').Select(int.Parse).ToList();
+                    int sum = numbersList.Sum(x => Convert.ToInt32(x));
+                    bool isPrime = chkIfPrime(sum);
+                    string jsonObj = JsonConvert.SerializeObject(new Result { Sum = sum, IsPrime = isPrime });
+                    return jsonObj;
+                }
+                else return "Input can only contain strings.";
             }
             return "";
         }

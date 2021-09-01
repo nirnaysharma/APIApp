@@ -59,6 +59,18 @@ namespace APIApp.Tests
             Assert.AreEqual(returnObj.IsPrime, true);
             Assert.AreEqual(returnObj.Sum, 89);
         }
+
+        /// <summary>
+        /// Checks if the multiple input textbox will accept strings or not.
+        /// </summary>
+        [TestMethod]
+        public void IntegersPrimeOrNotIncorrectIntegers()
+        {
+            var controller = new NumbersController();
+            var result = controller.IntegersPrimeOrNot(",11, 22, 56, u");
+            Assert.AreSame(result, "Input can only contain strings.");
+            Assert.AreEqual(result, "Input can only contain strings.");
+        }
     }
 
 
