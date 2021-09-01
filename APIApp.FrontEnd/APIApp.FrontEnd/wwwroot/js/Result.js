@@ -57,12 +57,23 @@ $("#submitSingleNumber").click(function () {
         datatype: JSON,
 
         success: function (data) {
-            var json = $.parseJSON(data);
-            var isPrime = $.parseJSON(json.IsPrime);
-            var text = "The sum ";
-            isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
-            //console.log(text);
-            $("#lblResults").text(text);
+            try {
+                //check if the return type is JSON or not
+                var json = JSON.parse(data);
+                var isPrime = $.parseJSON(json.IsPrime);
+                var text = "The sum ";
+                isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
+                $("#lblResults").css("color", "black");
+                $("#lblResults").text(text);
+            } catch (e) {
+                //JSON parse error, this is not json
+                $("#lblResults").css("color", "red");
+                $("#lblResults").text("Exception: Incorrect input");
+            }
+        },
+        error: function (request, status, error) {
+            $("#lblResults").css("color", "red");
+            $("#lblResults").text("Exception: " + request.responseText);
         }
     });
 
@@ -82,34 +93,44 @@ $("#submitMultipleNumbers").click(function () {
         datatype: JSON,
 
         success: function (data) {
-            var json = $.parseJSON(data);
-            var isPrime = $.parseJSON(json.IsPrime);
-            var sum = $.parseJSON(json.Sum);
-            var text = "The sum of the numbers is " + sum + " and the sum ";
-            isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
-            //console.log(text);
-            $("#lblResults").text(text);
+            try {
+                var json = $.parseJSON(data);
+                var isPrime = $.parseJSON(json.IsPrime);
+                var sum = $.parseJSON(json.Sum);
+                var text = "The sum of the numbers is " + sum + " and the sum ";
+                isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
+                $("#lblResults").css("color", "black");
+                $("#lblResults").text(text);
+            } catch (e) {
+                $("#lblResults").css("color", "red");
+                $("#lblResults").text("Exception: " + data);
+            }
+        },
+        error: function (request, status, error) {
+            $("#lblResults").css("color", "red");
+            $("#lblResults").text("Exception: " + request.responseText);
         }
     });
 });
 
 
-    $("#submitSingleMultipleNumbers").click(function () {
-        $("#txtSingleNumber").val('');
-        $("#submitSingleNumber").prop('disabled', true);
-        $("#txtMultipleNumber").val('');
-        $('#submitMultipleNumbers').prop('disabled', true);
-        $("#lblResults").html('');
-        $("#lblCombinedResults").text('');
-        var text;
-        var numbers = $("#txtSingleMultipleNumber").val();
-        $.ajax({
-            type: 'POST',
-            url: '/Home/CombinedMethod',
-            data: { "numbers": numbers },
-            datatype: JSON,
+$("#submitSingleMultipleNumbers").click(function () {
+    $("#txtSingleNumber").val('');
+    $("#submitSingleNumber").prop('disabled', true);
+    $("#txtMultipleNumber").val('');
+    $('#submitMultipleNumbers').prop('disabled', true);
+    $("#lblResults").html('');
+    $("#lblCombinedResults").text('');
+    var text;
+    var numbers = $("#txtSingleMultipleNumber").val();
+    $.ajax({
+        type: 'POST',
+        url: '/Home/CombinedMethod',
+        data: { "numbers": numbers },
+        datatype: JSON,
 
-            success: function (data) {
+        success: function (data) {
+            try {
                 var json = $.parseJSON(data);
                 var isPrime = $.parseJSON(json.IsPrime);
                 var sum = $.parseJSON(json.Sum);
@@ -117,17 +138,28 @@ $("#submitMultipleNumbers").click(function () {
                     //It is a single number
                     text = "The sum ";
                     isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
+                    $("#lblResults").css("color", "black");
                     $("#lblCombinedResults").text(text);
                 }
                 else {
                     //multiple numbers
                     text = "The sum of the numbers is " + sum + " and the sum ";
                     isPrime == true ? text += " is a Prime number" : text += " is NOT a Prime number";
+                    $("#lblResults").css("color", "black");
                     $("#lblCombinedResults").text(text);
                 }
+            } catch (e) {
+                $("#lblResults").css("color", "red");
+                $("#lblResults").text("Exception: " + data);
             }
-        });
+        },
+        error: function (request, status, error) {
+            $("#lblResults").css("color", "red");
+            $("#lblResults").text("Exception: " + request.responseText);
+        }
     });
+});
+
 
 
 

@@ -5623,11 +5623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.Tests\\APIApp.Tests.csproj",
+      "projectUniqueName": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.Tests\\APIApp.Tests.csproj",
       "projectName": "APIApp.Tests",
-      "projectPath": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.Tests\\APIApp.Tests.csproj",
+      "projectPath": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.Tests\\APIApp.Tests.csproj",
       "packagesPath": "C:\\Users\\nirnay.sharma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.Tests\\obj\\",
+      "outputPath": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5648,8 +5648,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\nirnay.sharma\\source\\repos\\ApiApp.API\\ApiApp.API.csproj": {
-              "projectPath": "C:\\Users\\nirnay.sharma\\source\\repos\\ApiApp.API\\ApiApp.API.csproj"
+            "C:\\New proj\\APIApp\\ApiApp.API\\ApiApp.API.csproj": {
+              "projectPath": "C:\\New proj\\APIApp\\ApiApp.API\\ApiApp.API.csproj"
             }
           }
         }

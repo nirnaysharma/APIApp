@@ -26,3 +26,31 @@ C:\Users\nirnay.sharma\source\repos\ApiApp.API\bin\Debug\netcoreapp3.1\Swashbuck
 C:\Users\nirnay.sharma\source\repos\ApiApp.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\nirnay.sharma\source\repos\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nirnay.sharma\source\repos\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.csproj.AssemblyReference.cache
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.exe
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.deps.json
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.runtimeconfig.json
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.runtimeconfig.dev.json
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.dll
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\ApiApp.API.pdb
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\New proj\APIApp\ApiApp.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.csproj.AssemblyReference.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.AssemblyInfoInputs.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.AssemblyInfo.cs
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.csproj.CoreCompileInputs.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.MvcApplicationPartsAssemblyInfo.cs
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.MvcApplicationPartsAssemblyInfo.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\staticwebassets\ApiApp.API.StaticWebAssets.Manifest.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\staticwebassets\ApiApp.API.StaticWebAssets.xml
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiApp.API.styles.css
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.RazorTargetAssemblyInfo.cache
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.csproj.CopyComplete
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.dll
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.pdb
+C:\New proj\APIApp\ApiApp.API\obj\Debug\netcoreapp3.1\ApiApp.API.genruntimeconfig.cache

@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 namespace ApiApp.API.Controllers
 {
     [ApiController]
-    //[Route("[controller]")]
     public class NumbersController : ControllerBase
     {
 
         public NumbersController()
         {
-           
+
         }
 
         //Endpoint 1
@@ -46,7 +45,7 @@ namespace ApiApp.API.Controllers
         [HttpGet("api/v1/single_number_prime")]
         public string SingleIntegerPrimeOrNot(int number)
         {
-           if(number != 0)
+            if (number != 0)
             {
                 int sum = 0;
                 while (number != 0)

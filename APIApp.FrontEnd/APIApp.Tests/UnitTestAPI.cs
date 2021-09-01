@@ -59,47 +59,7 @@ namespace APIApp.Tests
             Assert.AreEqual(returnObj.IsPrime, true);
             Assert.AreEqual(returnObj.Sum, 89);
         }
-
-        /// <summary>
-        /// Checks if the sum of integers is prime or not. Should return true and 89 as sum. It should also remove the last comma and not crash.
-        /// </summary>
-        [TestMethod]
-        public void IntegersPrimeOrNotExtraTrailingComma()
-        {
-            var controller = new NumbersController();
-            var result = controller.IntegersPrimeOrNot("11, 22, 56,");
-            var returnObj = JsonConvert.DeserializeObject<Result>(result);
-            Assert.AreEqual(returnObj.IsPrime, true);
-            Assert.AreEqual(returnObj.Sum, 89);
-        }
-
-        /// <summary>
-        /// Checks if the sum of integers is prime or not. Should return true and 89 as sum. It should also remove the first comma and not crash.
-        /// </summary>
-        [TestMethod]
-        public void IntegersPrimeOrNotExtraStartingComma()
-        {
-            var controller = new NumbersController();
-            var result = controller.IntegersPrimeOrNot(",11, 22, 56");
-            var returnObj = JsonConvert.DeserializeObject<Result>(result);
-            Assert.AreEqual(returnObj.IsPrime, true);
-            Assert.AreEqual(returnObj.Sum, 89);
-        }
-
-        /// <summary>
-        /// Checks if the sum of integers is prime or not. Should return true and 89 as sum. It should also remove the first and last comma and not crash.
-        /// </summary>
-        [TestMethod]
-        public void IntegersPrimeOrNotExtraStartingAndTrailingComma()
-        {
-            var controller = new NumbersController();
-            var result = controller.IntegersPrimeOrNot(",11, 22, 56,");
-            var returnObj = JsonConvert.DeserializeObject<Result>(result);
-            Assert.AreEqual(returnObj.IsPrime, true);
-            Assert.AreEqual(returnObj.Sum, 89);
-        }
-       
     }
 
-  
+
 }

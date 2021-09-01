@@ -16,7 +16,6 @@ namespace APIApp.FrontEnd.Controllers
 {
     public class HomeController : Controller
     {
-
         public HomeController()
         {
 
@@ -44,17 +43,21 @@ namespace APIApp.FrontEnd.Controllers
             try
             {
                 //API call to the API method named IntegersPrimeOrNot
-                var response = client.Execute<string>(new RestRequest());
+                var response = client.Execute<string>(new RestRequest(Method.GET));
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     return response.Data;
                 }
+                else
+                {
+                    return response.StatusCode.ToString();
+                }
             }
-           catch(Exception ex)
+            catch (Exception ex)
             {
                 return ex.ToString();
             }
-            return "";
+
         }
 
         //Method 1
@@ -73,17 +76,20 @@ namespace APIApp.FrontEnd.Controllers
             try
             {
                 //API call to the API method named SingleIntegerPrimeOrNot
-                var response = client.Execute<string>(new RestRequest());
+                var response = client.Execute<string>(new RestRequest(Method.GET));
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     return response.Data;
+                }
+                else
+                {
+                    return response.StatusCode.ToString();
                 }
             }
             catch (Exception ex)
             {
                 return ex.ToString();
             }
-            return "";
         }
 
         /// <summary>
@@ -106,17 +112,20 @@ namespace APIApp.FrontEnd.Controllers
             var client = new RestClient(apiUrl);
             try
             {
-                var response = client.Execute<string>(new RestRequest());
+                var response = client.Execute<string>(new RestRequest(Method.GET));
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     return response.Data;
+                }
+                else
+                {
+                    return response.StatusCode.ToString();
                 }
             }
             catch (Exception ex)
             {
                 return ex.ToString();
             }
-            return "";
         }
 
     }

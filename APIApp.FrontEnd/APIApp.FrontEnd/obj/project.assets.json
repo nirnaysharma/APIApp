@@ -291,11 +291,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.FrontEnd\\APIApp.FrontEnd.csproj",
+      "projectUniqueName": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.FrontEnd\\APIApp.FrontEnd.csproj",
       "projectName": "APIApp.FrontEnd",
-      "projectPath": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.FrontEnd\\APIApp.FrontEnd.csproj",
+      "projectPath": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.FrontEnd\\APIApp.FrontEnd.csproj",
       "packagesPath": "C:\\Users\\nirnay.sharma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nirnay.sharma\\source\\repos\\APIApp.FrontEnd\\APIApp.FrontEnd\\obj\\",
+      "outputPath": "C:\\New proj\\APIApp\\APIApp.FrontEnd\\APIApp.FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -316,8 +316,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\nirnay.sharma\\source\\repos\\ApiApp.API\\ApiApp.API.csproj": {
-              "projectPath": "C:\\Users\\nirnay.sharma\\source\\repos\\ApiApp.API\\ApiApp.API.csproj"
+            "C:\\New proj\\APIApp\\ApiApp.API\\ApiApp.API.csproj": {
+              "projectPath": "C:\\New proj\\APIApp\\ApiApp.API\\ApiApp.API.csproj"
             }
           }
         }
