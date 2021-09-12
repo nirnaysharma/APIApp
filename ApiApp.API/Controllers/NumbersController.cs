@@ -73,10 +73,20 @@ namespace ApiApp.API.Controllers
         /// <returns></returns>
         public static bool chkIfPrime(int num)
         {
-            for (int i = 2; i < num; i++)
-                if (num % i == 0)
-                    return false;
-            return true;
+            if (num < 2) return false; // A prime number is always greater than 1
+            if (num == 2) return true; // 2 is prime
+            if (num % 2 == 0) return false; // Even numbers except 2 are not prime
+
+            /****** if your number is Odd and not equals to 2, 
+               you have to check every numbers between 3 and the square of your number  *******/
+            var boundary = (int)Math.Floor(Math.Sqrt(num)); // square of your number
+
+            //increment i by 2 because you already checked that your number is Odd and therefore not divisible by an Even number
+            for (int i = 3; i <= boundary; i += 2)
+            {
+                if (num % i == 0) return false; // the number can be divided by an other => COMPOSITE number
+            }
+            return true; // number at least equals to 3, divisible only by one or itself => PRIME number
         }
     }
 

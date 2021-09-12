@@ -1,0 +1,9 @@
+
+ApiApp.API/obj/Debug/netcoreapp3.1/ApiApp.API.csproj.AssemblyReference.cache
+ApiApp.API/obj/Debug/netcoreapp3.1/ApiApp.API.csproj.AssemblyReference.cache
+APIApp.FrontEnd/.vs/APIApp/DesignTimeBuild/.dtbcache.v2
+APIApp.FrontEnd/.vs/APIApp/v16/.suo
+APIApp.FrontEnd/APIApp.FrontEnd/obj/Debug/netcoreapp3.1/APIApp.FrontEnd.csproj.AssemblyReference.cache
+APIApp.FrontEnd/APIApp.Tests/obj/Debug/netcoreapp3.1/APIApp.Tests.csproj.AssemblyReference.cache
+*.cache
+*.v2
